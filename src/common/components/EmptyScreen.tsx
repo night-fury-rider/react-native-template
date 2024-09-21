@@ -1,28 +1,19 @@
-import {StyleSheet, View} from 'react-native';
-import {Text, useTheme} from '@rneui/themed';
-
-import Icon from '$clubhouse/components/Icon';
+import {StyleSheet, Text, View} from 'react-native';
+import {Icon} from 'react-native-paper';
 
 type EmptyScreenProps = {
-  message: string;
+  message?: string;
   iconName?: string;
 };
 
 const EmptyScreen = ({message, iconName}: EmptyScreenProps) => {
-  const {theme} = useTheme();
   return (
-    <View
-      style={[styles.container, {backgroundColor: theme.colors.background1}]}>
-      {iconName ? (
-        <Icon
-          iconName={iconName}
-          iconColor={theme.colors.background6}
-          iconSize={50}
-          iconStyles={styles.icon}
-        />
-      ) : null}
+    <View style={[styles.container]}>
+      {iconName ? <Icon source={iconName} size={50} /> : null}
 
-      <Text style={styles.message}>{message}</Text>
+      <Text style={styles.message}>
+        {message ? message : 'Life is Beautiful'}
+      </Text>
     </View>
   );
 };
@@ -36,10 +27,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 10,
   },
-  icon: {
-    marginVertical: 20,
-  },
   message: {
     fontSize: 20,
+    marginVertical: 50,
   },
 });

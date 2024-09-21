@@ -5,7 +5,7 @@ This directory is intended for containing only the front end source code of appl
 
 ## What to add in this directory ?
 
-1. Each directory will act as an individual module (except clubhouse) of our applications.
+1. Each directory will act as an individual module (except common) of our applications.
    <br /><br />
 
 ## What to add in this directory ?

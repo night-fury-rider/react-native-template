@@ -1,57 +1,54 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
 
-import {TContact, TDashboardState} from '$dashboard/dashboard.types';
+import {TItem, TDashboardState} from '$dashboard/dashboard.types';
 
 const initialState: TDashboardState = {
-  contacts: [],
-  filteredContacts: [], // Used in dashboard screen only
-  selectedContacts: [],
+  items: [],
+  filteredItems: [], // Used in dashboard screen only
+  selectedItems: [],
   lastModifiedTime: Date.now(),
 };
 
 /**
- * @description Updates the main contacts array & filtered contacts array/
+ * @description Updates the main items array & filtered items array/
  */
-const _setContacts = (
-  state: TDashboardState,
-  action: PayloadAction<TContact[]>,
-) => {
-  state.contacts = action.payload;
-  state.filteredContacts = action.payload;
+const _setItems = (state: TDashboardState, action: PayloadAction<TItem[]>) => {
+  state.items = action.payload;
+  state.filteredItems = action.payload;
   state.lastModifiedTime = Date.now();
 };
 
-const _filterContacts = (
+const _filterItems = (
   state: TDashboardState,
-  action: PayloadAction<TContact[]>,
+  action: PayloadAction<TItem[]>,
 ) => {
-  state.filteredContacts = action.payload;
+  state.filteredItems = action.payload;
 };
 
 const _resetFilters = (state: TDashboardState) => {
-  state.filteredContacts = state.contacts;
+  state.filteredItems = state.items;
 };
 
-const _selectContacts = (
+const _selectItems = (
   state: TDashboardState,
-  action: PayloadAction<TContact[]>,
+  action: PayloadAction<TItem[]>,
 ) => {
-  state.selectedContacts = action.payload;
+  state.selectedItems = action.payload;
 };
 
 export const dashboardSlice = createSlice({
   name: 'dashboard',
   initialState,
   reducers: {
-    setContacts: _setContacts, // Used in case of update/delete contact
-    setFilteredContacts: _filterContacts,
+    setItems: _setItems, // Used in case of update/delete item
+    setFilteredItems: _filterItems,
     resetFilters: _resetFilters,
-    selectContacts: _selectContacts,
+    selectItems: _selectItems,
   },
 });
 
-export const {setContacts, setFilteredContacts, resetFilters, selectContacts} =
+export const {setItems, setFilteredItems, resetFilters, selectItems} =
   dashboardSlice.actions;
 
 export default dashboardSlice.reducer;

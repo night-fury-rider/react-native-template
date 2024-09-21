@@ -1,4 +1,4 @@
-import {Button as LibraryButton, useTheme} from '@rneui/themed';
+import {Button as LibraryButton} from 'react-native-paper';
 import {GestureResponderEvent, StyleSheet} from 'react-native';
 
 type ButtonProps = {
@@ -14,18 +14,13 @@ const Button = ({
   handlePress,
   titleStyle = {},
 }: ButtonProps) => {
-  const {theme} = useTheme();
   return (
     <LibraryButton
       onPress={handlePress}
-      title={title}
-      buttonStyle={[
-        styles.button,
-        buttonStyle,
-        {backgroundColor: theme.colors.background6},
-      ]}
-      titleStyle={titleStyle}
-    />
+      style={[buttonStyle, styles.button]}
+      labelStyle={titleStyle}>
+      {title}
+    </LibraryButton>
   );
 };
 

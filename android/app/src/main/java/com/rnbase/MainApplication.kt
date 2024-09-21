@@ -1,4 +1,4 @@
-package com.rnbase
+package com.yuvrajpatil.apps.base.reactnative
 
 import android.app.Application
 import com.facebook.react.PackageList

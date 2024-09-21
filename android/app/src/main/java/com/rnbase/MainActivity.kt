@@ -1,4 +1,4 @@
-package com.rnbase
+package com.yuvrajpatil.apps.base.reactnative
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

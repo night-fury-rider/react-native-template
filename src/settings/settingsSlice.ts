@@ -1,7 +1,7 @@
 import {createSlice} from '@reduxjs/toolkit';
 import type {PayloadAction} from '@reduxjs/toolkit';
 
-import StorageService from '$clubhouse/services/StorageService';
+import StorageService from '$common/services/StorageService';
 import {TSettingsState} from '$settings/settings.types';
 
 const initialState: TSettingsState = {

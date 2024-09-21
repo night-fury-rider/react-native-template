@@ -4,7 +4,7 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 export type RootStackParamList = {
   DashboardNavigator: undefined;
   Dashboard: undefined;
-  ContactDetails: {id: string; title: string};
+  ItemDetails: {id: string; title: string};
   Settings: undefined;
   Tools: undefined;
 };
@@ -16,7 +16,7 @@ export type TNavigationDashboard = NativeStackScreenProps<
   'Dashboard'
 >;
 
-export type TNavigationContactDetails = NativeStackScreenProps<
+export type TNavigationItemDetails = NativeStackScreenProps<
   RootStackParamList,
-  'ContactDetails'
+  'ItemDetails'
 >;

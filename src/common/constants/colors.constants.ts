@@ -1,6 +1,5 @@
 // This file is intended to serve as the single source of truth for all colors used in the app.
 
-
 export const COLORS = {
   black: 'black',
   grey: 'grey',
@@ -33,12 +32,12 @@ export const BLUE_COLOR_THEME = {
   background3: '#d0e4ff', // Dashboard --> + icon background color
   background4: '#e6edfd', // Bottom tab background color
   background5: '#0061a2', // Bottom tab active tab background color
-  background6: '#0061a2', // Dashboard --> No contacts --> Icon of Phone
-  // Tools --> Import Contact --> Import Button's background (When enabled)
+  background6: '#0061a2', // Dashboard --> No items --> Icon of Phone
+  // Tools --> Import Item --> Import Button's background (When enabled)
 
-  background7: '#f8f9fe', // Add/Edit Contact --> Background color
+  background7: '#f8f9fe', // Add/Edit Item --> Background color
 
-  background8: '#f0f4ff', // Contact Details --> Tile Background color
+  background8: '#f0f4ff', // Item Details --> Tile Background color
 
   text1: '#1e1b16', // Main Text color
 };
@@ -50,12 +49,12 @@ export const ORANGE_COLOR_THEME = {
   background3: '#ffdbcb', // Dashboard --> + icon background color
   background4: '#feeae1', // Bottom tab background color
   background5: '#2e1500', // Bottom tab active tab background color
-  background6: '#9d4400', // Dashboard --> No contacts --> Icon of Phone
-  // Tools --> Import Contact --> Import Button's background (When enabled)
+  background6: '#9d4400', // Dashboard --> No items --> Icon of Phone
+  // Tools --> Import Item --> Import Button's background (When enabled)
 
-  background7: '#fff8f6', // Add/Edit Contact --> Background color
+  background7: '#fff8f6', // Add/Edit Item --> Background color
 
-  background8: '#fff2ec', // Contact Details --> Tile Background color
+  background8: '#fff2ec', // Item Details --> Tile Background color
 
   text1: '#1e1b16', // Main Text color
 };
@@ -82,12 +81,12 @@ export const DARK_COLORS = {
   background3: '#594500', // Dashboard --> + icon background color
   background4: '#231f13', // Bottom tab background color
   background5: '#51462a', // Bottom tab active tab background color
-  background6: '#cec5b4', // Dashboard --> No contacts --> Icon of Phone
-  // Tools --> Import Contact --> Import Button's background (When enabled)
+  background6: '#cec5b4', // Dashboard --> No items --> Icon of Phone
+  // Tools --> Import Item --> Import Button's background (When enabled)
 
-  background7: '#171308', // Add/Edit Contact --> Background color
+  background7: '#171308', // Add/Edit Item --> Background color
 
-  background8: '#1f1b10', // Contact Details --> Tile Background color
+  background8: '#1f1b10', // Item Details --> Tile Background color
 };
 
 export const DARK_BLUE_COLOR_THEME = {

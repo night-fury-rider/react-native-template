@@ -3,7 +3,7 @@
 
 import {MMKV} from 'react-native-mmkv';
 
-import LoggerService from '$clubhouse/services/LoggerService';
+import LoggerService from '$common/services/LoggerService';
 
 const StorageService = (() => {
   let storage: any = null;

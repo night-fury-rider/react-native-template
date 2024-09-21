@@ -1,14 +1,14 @@
 // This file is intended to serve as the single source of truth for all strings/messages which are visible to user (including error messages)
 // Prefer keeping strings inside appropriate module objects
 
-export const CLUBHOUSE = {
+export const COMMON = {
   errorsMsg: {
-    contactNotFound: 'Unable to find the contact',
+    itemNotFound: 'Unable to find the item',
     emailNotAvailable: 'Email ID is not available',
     locationNotAvailable: 'Location is not available',
     incorrectEmptySpacesFile: 'Unnable to load Empty Spaces File',
     phoneNotAvailable: 'Phone Number not available',
-    errorWhileSaving: 'Error while saving contacts',
+    errorWhileSaving: 'Error while saving items',
     errorWhileDeleting: 'Error in deleting',
     errorWhileSelectingFile: 'Data File Not Selected.',
     errorWhileSelectingVCFFile: 'VCF File Not Selected.',
@@ -16,7 +16,7 @@ export const CLUBHOUSE = {
     errorReadingFile: 'Error while reading the source file',
     errorInSelectingAvatar: 'Error while selecting the photo',
     errorInPermissions: 'Error in permission',
-    errorInReadingContacts: 'Please allow accessing the contacts.',
+    errorInReadingItems: 'Please allow accessing the items.',
   },
   permissions: {
     status: {
@@ -32,31 +32,32 @@ export const CLUBHOUSE = {
 };
 
 export const DASHBOARD = {
-  emptyMsg: 'Press + to add one',
-  title: 'Contacts',
+  emptyMsg: 'Dashboard is coming Soon',
+  comingSoon: 'Dashboard is coming Soon',
+  title: 'Items',
   searchBox: {
-    placeholder: 'Search Contact',
+    placeholder: 'Search Item',
     noResults: 'No Results',
   },
-  contactDetails: {
+  itemDetails: {
     about: 'about',
     deletePrompt: {
       cancel: 'Cancel',
       delete: 'Delete',
-      message: 'This contact will be removed.',
-      title: 'Delete Contact ?',
+      message: 'This item will be removed.',
+      title: 'Delete Item ?',
     },
-    info: 'Contact info',
+    info: 'Item info',
     labels: 'Labels',
-    successMsg: {deleted: 'Contact is deleted successfully'},
+    successMsg: {deleted: 'Item is deleted successfully'},
   },
-  editContact: {
+  editItem: {
     addPicture: 'Add picture',
     bloodGroup: 'Blood Group',
     bloodGroupSelectionTitle: 'Select Blood Group',
     changePicture: 'Change',
-    createContact: 'Create Contact',
-    editContact: 'Edit Contact',
+    createItem: 'Create Item',
+    editItem: 'Edit Item',
     enterName: 'Name',
     enterJobTitle: 'Job Title',
     enterPrimaryNumber: 'Primary Phone',
@@ -70,9 +71,9 @@ export const DASHBOARD = {
     removePicture: 'Remove',
     saveBtnText: 'Save',
     successMsg: {
-      added: 'Contact is added successfully',
-      updated: 'Contact is updated successfully',
-      persisted: 'Updated contacts have been persisted',
+      added: 'Item is added successfully',
+      updated: 'Item is updated successfully',
+      persisted: 'Updated items have been persisted',
     },
   },
 };
@@ -80,7 +81,7 @@ export const DASHBOARD = {
 export const SETTINGS = {
   title: 'Settings',
   comingSoon: 'Settings are coming soon',
-  totalContacts: 'Total Contacts',
+  totalItems: 'Total Items',
   appVersion: 'App Version',
   chooseColorTheme: 'Choose Color Theme',
   developerOptions: 'Enable Developer Options',
@@ -96,25 +97,25 @@ export const TOOLS = {
       cancel: 'Cancel',
       delete: 'Delete',
       message:
-        'We are not keeping your data on server. Please backup your data using Save Contacts option. \n\nData from app will be deleted.',
+        'We are not keeping your data on server. Please backup your data using Save Items option. \n\nData from app will be deleted.',
       title: 'Delete Data from mobile ?',
     },
   },
   importData: {
-    title: 'Import \n Contacts',
-    successMsg: 'Contacts Imported Successfully',
+    title: 'Import \n Items',
+    successMsg: 'Items Imported Successfully',
     cancel: 'Cancel',
-    emptyMsg: 'No contact found. Please reset the search.',
+    emptyMsg: 'No item found. Please reset the search.',
     successBtn: 'Import',
     permissionDenialModal: {
-      title: 'Contacts',
-      message: 'This app would like to view your contacts.',
-      buttonPositive: 'Please allow accessing your contacts.',
+      title: 'Items',
+      message: 'This app would like to view your items.',
+      buttonPositive: 'Please allow accessing your items.',
     },
   },
   exportJSON: {
-    title: 'Save \n Contacts',
-    successMsg: 'Contacts Saved Successfully',
+    title: 'Save \n Items',
+    successMsg: 'Items Saved Successfully',
     cancel: 'Cancel',
     successBtn: 'Export',
     permissionDenialModal: {

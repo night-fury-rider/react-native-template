@@ -1,13 +1,13 @@
 export type TDashboardState = {
-  contacts: TContact[];
-  filteredContacts: TContact[];
-  selectedContacts: TContact[];
+  items: TItem[];
+  filteredItems: TItem[];
+  selectedItems: TItem[];
   lastModifiedTime: number;
 };
 
 export type TLabelCategory = 'Primary' | 'Secondary';
 
-export type TContactNumber = {
+export type TItemNumber = {
   label: TLabelCategory;
   value: string;
 };
@@ -33,18 +33,18 @@ export type TBloodGroup =
   | 'AB-'
   | 'AB+';
 
-export type TContact = {
-  // Specifies the possible values of the object of type TContact
+export type TItem = {
+  // Specifies the possible values of the object of type TItem
   [key: string]:
     | string
     | number
-    | TContactNumber[]
+    | TItemNumber[]
     | TEmailId[]
     | TAddress[]
     | undefined;
   id: string; // It would never change
-  contactNumbers: TContactNumber[];
-  contactStr: string;
+  itemNumbers: TItemNumber[];
+  itemStr: string;
   displayName: string;
   addresses?: TAddress[];
   bloodGroup?: TBloodGroup;

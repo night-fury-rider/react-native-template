@@ -1,79 +1,102 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Base
+
+This app is used to provide following to the my React Native apps:
+
+- Project Structure
+- Navigation
+- State Management
+- API Integration
+- Styling (Theming)
+- Custom Fonts
+- Testing
+- Error Handling
+
+<br/><br/>
+
+# Technologies and Libraries Used
+
+- [React Native 0.75.2](https://reactnative.dev/)
+- [React 18.3.1](https://reactjs.org/)
+- [React Native Paper 5.12.3](https://callstack.github.io/react-native-paper/)
+- [React Native Vector Icons 10.1.0](https://www.npmjs.com/package/react-native-vector-icons)
+- [React Native MMKV 2.10.2](https://github.com/mrousavy/react-native-mmkv)
+- [Babel Module Resolver 5.0.0](https://www.npmjs.com/package/babel-plugin-module-resolver)
+
+  <br/><br/>
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Prerequisite
 
-## Step 1: Start the Metro Server
+- Mobile with USB debugging enabled
+- Mobile and laptop are on the same wifi.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Install the app on mobile
 
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
 ```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
 yarn android
 ```
 
-### For iOS
+## Enable Wireless hot reload
 
-```bash
-# using npm
-npm run ios
+- Run `adb devices` to get Mobile device name.
+- Run `ipconfig` to get the IP (v4).
+- Connect mobile to laptop via USB cable.
+- Install the app
 
-# OR using Yarn
-yarn ios
+```
+yarn android
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- Disconnect mobile from USB. Metro bundler will be disconnected.
+- Shake the mobile to open the React Native Dev menu. Select Settings. Open Debug server host & port for device.
+- Enter IP v4 (from step 1) and port number (Generally 8081). Ex. `192.168.1.12:8081`
+- Shake the mobile to open the React Native Dev menu .
+- Select Reload. Now hot reload should work.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+  <br/><br/>
 
-## Step 3: Modifying your App
+# Create the release build
 
-Now that you have successfully run the app, let's modify it.
+- Make sure that `my-upload-key.keystore` file is kept under the `android/app` directory
+- Make sure that `gradle.properties` file is kept under the `.gradle` directory. In Windows, `.gradle` directory is under `C:\Users\<username>`.
+- Increment `version` in `package.json`.
+- Increment `versionMajor` or `versionMinor` or `versionPatch` in `android/app/build.gradle`
+- Create the apk build.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```
+yarn run android-build-apk
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- Uninstall the app from device (from work profile as well if available). Connect the device using USB.
+- Install the apk file onto device
 
-## Congratulations! :tada:
+```
+adb -s <device_name> install android/app/build/outputs/apk/release/app-release.apk
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+- Complete the sanity testing and capture the screenshots.
+- Update the screenshots in this README.
+- Capture the home screen screenshot on emulator with Nexus_7_API_33.
+- Capture the home screen screenshot on emulator with Nexus_10_API_33.
+- Create a [release on Github](https://github.com/night-fury-rider/react-native-base/releases). Use [Github filter](https://github.com/night-fury-rider/react-native-base/compare/v0.0.1...main) for extracting data for release notes.
+- Create the release build (aab build).
 
-### Now what?
+```
+yarn run android-build
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+<br/><br/>
 
-# Troubleshooting
+# Deploy the App on PlayStore
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+1. Login into [Developer Console Account](https://play.google.com/console/developers)
+2. Select the app from the App list. It should open the App Dashboard.
+3. Select `Production` (which is under `Release`) from the sidebar.
+4. Click on `Create new release` which is on the right top. It would open `Create production release`.
+5. Upload the build file and follow the instructions.
+   <br/><br/>
 
-# Learn More
+# Disclaimer
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This is a foundational app with a basic setup that will serve as the starting point for building my other React Native applications.

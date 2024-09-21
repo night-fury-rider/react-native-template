@@ -1,58 +1,18 @@
-import {SearchBar, useTheme} from '@rneui/themed';
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import {COLORS} from '$clubhouse/constants/colors.constants';
-import {DASHBOARD} from '$clubhouse/constants/strings.constants';
-import {useAppDispatch, useAppSelector} from '$clubhouse/redux/redux.hooks';
-import {filterContacts} from '$dashboard/ContactService';
-import {resetFilters, setFilteredContacts} from '$dashboard/dashboardSlice';
+import {COLORS} from '$common/constants/colors.constants';
+import {useAppSelector} from '$common/redux/redux.hooks';
 
 const DashboardHeader = () => {
-  const {theme} = useTheme();
-  const dispatch = useAppDispatch();
-
-  const contacts = useAppSelector(state => state.dashboard.contacts);
   const lastModifiedTime = useAppSelector(
     state => state.dashboard.lastModifiedTime,
   );
 
-  const [searchValue, setSearchValue] = useState('');
+  // Reset the search string whenever there is update in main item list
+  useEffect(() => {}, [lastModifiedTime]);
 
-  // Reset the search string whenever there is update in main contact list
-  useEffect(() => {
-    setSearchValue('');
-  }, [lastModifiedTime]);
-
-  const handleSearchChange = (searchText: any) => {
-    setSearchValue(searchText);
-    if (searchText) {
-      dispatch(setFilteredContacts(filterContacts(contacts, searchText)));
-    } else {
-      dispatch(resetFilters());
-    }
-  };
-  return (
-    <View style={[styles.view, {backgroundColor: theme.colors.background1}]}>
-      <SearchBar
-        placeholder={DASHBOARD.searchBox.placeholder}
-        onChangeText={handleSearchChange}
-        round
-        searchIcon={{
-          name: 'search',
-          size: 25,
-        }}
-        value={searchValue}
-        containerStyle={styles.searchBarContainer}
-        inputContainerStyle={[
-          styles.searchBarInputContainer,
-          {backgroundColor: theme.colors.background2},
-        ]}
-        inputStyle={styles.searchBarInput}
-        style={styles.searchBar}
-      />
-    </View>
-  );
+  return <View style={[styles.view]}></View>;
 };
 
 const styles = StyleSheet.create({

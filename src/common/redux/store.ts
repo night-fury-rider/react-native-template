@@ -1,18 +1,18 @@
 import {configureStore, createListenerMiddleware} from '@reduxjs/toolkit';
 
-import {DASHBOARD} from '$clubhouse/constants/strings.constants';
-import LoggerService from '$clubhouse/services/LoggerService';
-import StorageService from '$clubhouse/services/StorageService';
-import dashboardSlice, {setContacts} from '$dashboard/dashboardSlice';
+import {DASHBOARD} from '$common/constants/strings.constants';
+import LoggerService from '$common/services/LoggerService';
+import StorageService from '$common/services/StorageService';
+import dashboardSlice, {setItems} from '$dashboard/dashboardSlice';
 import settingsSlice from '$settings/settingsSlice';
 
 const listenerMiddleware = createListenerMiddleware();
 
 listenerMiddleware.startListening({
-  actionCreator: setContacts,
+  actionCreator: setItems,
   effect: async action => {
-    await StorageService.set('contacts', action.payload);
-    LoggerService.log(DASHBOARD.editContact.successMsg.persisted);
+    await StorageService.set('items', action.payload);
+    LoggerService.log(DASHBOARD.editItem.successMsg.persisted);
   },
 });
 
