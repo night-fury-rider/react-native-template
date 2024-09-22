@@ -32,7 +32,7 @@ This app has following:
 
 # Getting Started
 
-## Logo Creation
+## Create a Logo
 - Visit [Adobe Express](https://new.express.adobe.com/)
 - Click `Logo` option to open the templates.
 - Search the templates from left sidebar.
@@ -46,7 +46,7 @@ This app has following:
 - Press `Align` option from top header. Select `Middle` and `Center`. It will make sure our logo is at exact center.
 - Press `Download` button to download the logo.
 
-## Android `res` images
+## Create Android Launcher Images
 - Visit [Icon Kitchen](https://icon.kitchen/)
 - Select `Image` option from left sidebar.
 - Press `Drop Image Here` and select the logo image.
