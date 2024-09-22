@@ -32,10 +32,33 @@ This app has following:
 
 # Getting Started
 
+## Logo Creation
+- Visit [Adobe Express](https://new.express.adobe.com/)
+- Click `Logo` option to open the templates.
+- Search the templates from left sidebar.
+- Select the appropriate template.
+- Rename the file with a proper name.
+- Remove unncessary elements from the logo. Try to keep only one image/element.
+- The Template may have multiple elements. Select all elements using `Ctrl+A`.
+- Press the `Group` option to group the elements of logo.
+- Use the Edges of the group to enlarge the image.
+- Keep around 10% area as margin from boundary.
+- Press `Align` option from top header. Select `Middle` and `Center`. It will make sure our logo is at exact center.
+- Press `Download` button to download the logo.
+
+## Android `res` images
+- Visit [Icon Kitchen](https://icon.kitchen/)
+- Select `Image` option from left sidebar.
+- Press `Drop Image Here` and select the logo image.
+- Keep `0` padding.
+- Press `Download`. It will download a zip file which has all android images.
+- 
+
 ## Prerequisite
 
 - Mobile with USB debugging enabled
 - Mobile and laptop are on the same wifi.
+- Logos for android's `res` folder.
 
 ## Install the app on mobile
 
