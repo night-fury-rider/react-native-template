@@ -47,12 +47,12 @@ This app has following:
 - Press `Download` button to download the logo.
 
 ## Create Android Launcher Images
-- Visit [Icon Kitchen](https://icon.kitchen/)
+- Visit [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
 - Select `Image` option from left sidebar.
-- Press `Drop Image Here` and select the logo image.
+- Select the logo image.
 - Keep `0` padding.
 - Press `Download`. It will download a zip file which has all android images.
-- 
+
 
 ## Prerequisite
 
