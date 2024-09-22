@@ -1,15 +1,21 @@
 # React Native Base
 
-This app is used to provide following to the my React Native apps:
+This is a template for the new React Native apps. Every new React Native app should follow this template.
 
-- Project Structure
-- Navigation
-- State Management
-- API Integration
-- Styling (Theming)
-- Custom Fonts
-- Testing
-- Error Handling
+This app has following:
+<pre>
+✔️ Project Structure
+✔️ Bottom Tab Navigation
+✔️ State Management
+✔️ Module Resolution
+✔️ Styling (Theming)
+</pre>
+
+
+<p >
+  <pre><img src="https://github.com/user-attachments/assets/c1a01c32-f193-46e9-a2fb-57c45f560172" width="200" height="400" alt=""/> <img src="https://github.com/user-attachments/assets/8bfb498a-2ed3-446e-883f-d5c393e5b73b" width="200" height="400" alt=""/></pre>
+</p>
+
 
 <br/><br/>
 
