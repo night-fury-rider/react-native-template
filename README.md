@@ -12,7 +12,7 @@ This app has following:
 </pre>
 
 
-<p >
+<p>
   <pre><img src="https://github.com/user-attachments/assets/c1a01c32-f193-46e9-a2fb-57c45f560172" width="200" height="400" alt=""/> <img src="https://github.com/user-attachments/assets/8bfb498a-2ed3-446e-883f-d5c393e5b73b" width="200" height="400" alt=""/></pre>
 </p>
 
@@ -32,10 +32,33 @@ This app has following:
 
 # Getting Started
 
+## Create a Logo
+- Visit [Adobe Express](https://new.express.adobe.com/)
+- Click `Logo` option to open the templates.
+- Search the templates from left sidebar.
+- Select the appropriate template.
+- Rename the file with a proper name.
+- Remove unncessary elements from the logo. Try to keep only one image/element.
+- The Template may have multiple elements. Select all elements using `Ctrl+A`.
+- Press the `Group` option to group the elements of logo.
+- Use the Edges of the group to enlarge the image.
+- Keep around 10% area as margin from boundary.
+- Press `Align` option from top header. Select `Middle` and `Center`. It will make sure our logo is at exact center.
+- Press `Download` button to download the logo.
+
+## Create Android Launcher Images
+- Visit [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
+- Select `Image` option from left sidebar.
+- Select the logo image.
+- Keep `0` padding.
+- Press `Download`. It will download a zip file which has all android images.
+
+
 ## Prerequisite
 
 - Mobile with USB debugging enabled
 - Mobile and laptop are on the same wifi.
+- Logos for android's `res` folder.
 
 ## Install the app on mobile
 
