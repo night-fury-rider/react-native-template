@@ -5,18 +5,7 @@ export const COMMON = {
   errorsMsg: {
     itemNotFound: 'Unable to find the item',
     emailNotAvailable: 'Email ID is not available',
-    locationNotAvailable: 'Location is not available',
     incorrectEmptySpacesFile: 'Unnable to load Empty Spaces File',
-    phoneNotAvailable: 'Phone Number not available',
-    errorWhileSaving: 'Error while saving items',
-    errorWhileDeleting: 'Error in deleting',
-    errorWhileSelectingFile: 'Data File Not Selected.',
-    errorWhileSelectingVCFFile: 'VCF File Not Selected.',
-    errorWhileSelectingJSONFile: 'JSON File Not Selected.',
-    errorReadingFile: 'Error while reading the source file',
-    errorInSelectingAvatar: 'Error while selecting the photo',
-    errorInPermissions: 'Error in permission',
-    errorInReadingItems: 'Please allow accessing the items.',
   },
   permissions: {
     status: {
@@ -41,40 +30,9 @@ export const DASHBOARD = {
   },
   itemDetails: {
     about: 'about',
-    deletePrompt: {
-      cancel: 'Cancel',
-      delete: 'Delete',
-      message: 'This item will be removed.',
-      title: 'Delete Item ?',
-    },
-    info: 'Item info',
-    labels: 'Labels',
-    successMsg: {deleted: 'Item is deleted successfully'},
   },
   editItem: {
     addPicture: 'Add picture',
-    bloodGroup: 'Blood Group',
-    bloodGroupSelectionTitle: 'Select Blood Group',
-    changePicture: 'Change',
-    createItem: 'Create Item',
-    editItem: 'Edit Item',
-    enterName: 'Name',
-    enterJobTitle: 'Job Title',
-    enterPrimaryNumber: 'Primary Phone',
-    enterSecondaryNumber: 'Secondary Phone',
-    enterAddress: 'Address',
-    enterEmailId: 'Email Id',
-    enterNote: 'Note',
-    errorsMsg: {},
-    permissionGranted: 'Permission Granted',
-    permissionDenied: 'Permission Denied',
-    removePicture: 'Remove',
-    saveBtnText: 'Save',
-    successMsg: {
-      added: 'Item is added successfully',
-      updated: 'Item is updated successfully',
-      persisted: 'Updated items have been persisted',
-    },
   },
 };
 
@@ -103,36 +61,5 @@ export const TOOLS = {
   },
   importData: {
     title: 'Import \n Items',
-    successMsg: 'Items Imported Successfully',
-    cancel: 'Cancel',
-    emptyMsg: 'No item found. Please reset the search.',
-    successBtn: 'Import',
-    permissionDenialModal: {
-      title: 'Items',
-      message: 'This app would like to view your items.',
-      buttonPositive: 'Please allow accessing your items.',
-    },
-  },
-  exportJSON: {
-    title: 'Save \n Items',
-    successMsg: 'Items Saved Successfully',
-    cancel: 'Cancel',
-    successBtn: 'Export',
-    permissionDenialModal: {
-      title: 'File System',
-      message: 'This app would like to access file system.',
-      buttonPositive: 'Please allow accessing your file system.',
-    },
-  },
-  importJSON: {
-    title: 'Import \n Backup',
-    successMsg: 'Backup Imported Successfully',
-    cancel: 'Cancel',
-    successBtn: 'Import',
-    permissionDenialModal: {
-      title: 'File System',
-      message: 'This app would like to access file system.',
-      buttonPositive: 'Please allow accessing your file system.',
-    },
   },
 };
