@@ -87,33 +87,7 @@ yarn android
 
 # Create the release build
 
-- Make sure that `my-upload-key.keystore` file is kept under the `android/app` directory
-- Make sure that `gradle.properties` file is kept under the `.gradle` directory. In Windows, `.gradle` directory is under `C:\Users\<username>`.
-- Increment `version` in `package.json`.
-- Increment `versionMajor` or `versionMinor` or `versionPatch` in `android/app/build.gradle`
-- Create the apk build.
-
-```
-yarn run android-build-apk
-```
-
-- Uninstall the app from device (from work profile as well if available). Connect the device using USB.
-- Install the apk file onto device
-
-```
-adb -s <device_name> install android/app/build/outputs/apk/release/app-release.apk
-```
-
-- Complete the sanity testing and capture the screenshots.
-- Update the screenshots in this README.
-- Capture the home screen screenshot on emulator with Nexus_7_API_33.
-- Capture the home screen screenshot on emulator with Nexus_10_API_33.
-- Create a [release on Github](https://github.com/night-fury-rider/react-native-base/releases). Use [Github filter](https://github.com/night-fury-rider/react-native-base/compare/v0.0.1...main) for extracting data for release notes.
-- Create the release build (aab build).
-
-```
-yarn run android-build
-```
+https://github.com/night-fury-rider/react-native-template/wiki/Create-the-release-build
 
 <br/><br/>
 
