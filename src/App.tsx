@@ -1,12 +1,12 @@
 import React from 'react';
-import {BottomNavigation, useTheme} from 'react-native-paper';
+import {Appbar, BottomNavigation, useTheme} from 'react-native-paper';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import ErrorBoundary from '$common/components/ErrorBoundary';
+import {SETTINGS} from '$common/constants/strings.constants';
 import StorageService from '$common/services/StorageService';
 import DashboardScreen from '$dashboard/DashboardScreen';
 import SettingsScreen from '$settings/SettingsScreen';
-import {BLUE_COLOR_THEME} from '$common/constants/colors.constants';
 
 StorageService.init();
 
@@ -35,9 +35,22 @@ function App() {
     settings: SettingsScreen,
   });
 
+  const renderAppBar = () => {
+    // Only show Appbar for Settings Screen
+    if (index === routes.length - 1) {
+      return (
+        <Appbar.Header>
+          <Appbar.Content title={SETTINGS.title} />
+        </Appbar.Header>
+      );
+    }
+    return null; // Don't render Appbar for other screens
+  };
+
   return (
     <ErrorBoundary>
       <SafeAreaProvider>
+        {renderAppBar()}
         <BottomNavigation
           navigationState={{index, routes}}
           onIndexChange={setIndex}
@@ -45,12 +58,12 @@ function App() {
           barStyle={{
             backgroundColor: theme.dark
               ? theme.colors.inverseOnSurface
-              : BLUE_COLOR_THEME.background4,
+              : theme.colors.primaryContainer,
           }}
           activeIndicatorStyle={{
             backgroundColor: theme.dark
               ? theme.colors.surface
-              : BLUE_COLOR_THEME.background3,
+              : theme.colors.onPrimary,
           }}
         />
       </SafeAreaProvider>
