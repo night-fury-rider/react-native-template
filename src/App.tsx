@@ -18,8 +18,8 @@ function App() {
     {
       key: 'dashboard',
       title: 'Dashboard',
-      focusedIcon: 'currency-inr',
-      unfocusedIcon: 'currency-inr',
+      focusedIcon: 'home',
+      unfocusedIcon: 'home-outline',
     },
 
     {
