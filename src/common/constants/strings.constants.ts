@@ -21,45 +21,14 @@ export const COMMON = {
 };
 
 export const DASHBOARD = {
-  emptyMsg: 'Dashboard is coming Soon',
   comingSoon: 'Dashboard is coming Soon',
-  title: 'Items',
   searchBox: {
     placeholder: 'Search Item',
     noResults: 'No Results',
-  },
-  itemDetails: {
-    about: 'about',
-  },
-  editItem: {
-    addPicture: 'Add picture',
   },
 };
 
 export const SETTINGS = {
   title: 'Settings',
-  comingSoon: 'Settings are coming soon',
-  totalItems: 'Total Items',
   appVersion: 'App Version',
-  chooseColorTheme: 'Choose Color Theme',
-  developerOptions: 'Enable Developer Options',
-};
-
-export const TOOLS = {
-  title: 'Tools',
-  comingSoon: 'Tools are coming soon',
-  deleteData: {
-    title: 'Delete Data',
-    successMsg: 'Data deleted Successfully',
-    prompt: {
-      cancel: 'Cancel',
-      delete: 'Delete',
-      message:
-        'We are not keeping your data on server. Please backup your data using Save Items option. \n\nData from app will be deleted.',
-      title: 'Delete Data from mobile ?',
-    },
-  },
-  importData: {
-    title: 'Import \n Items',
-  },
 };
