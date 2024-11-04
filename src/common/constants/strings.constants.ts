@@ -21,7 +21,7 @@ export const COMMON = {
 };
 
 export const DASHBOARD = {
-  comingSoon: 'Dashboard is coming Soon',
+  comingSoon: 'Dashboard data will appear here.',
   searchBox: {
     placeholder: 'Search Item',
     noResults: 'No Results',
