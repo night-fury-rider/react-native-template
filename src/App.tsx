@@ -21,7 +21,6 @@ function App() {
       focusedIcon: 'home',
       unfocusedIcon: 'home-outline',
     },
-
     {
       key: 'settings',
       title: 'Settings',
