@@ -17,7 +17,8 @@ This app has following:
 </p>
 
 
-<br/><br/>
+--- 
+
 
 # Technologies and Libraries Used
 
@@ -28,7 +29,8 @@ This app has following:
 - [React Native MMKV 2.10.2](https://github.com/mrousavy/react-native-mmkv)
 - [Babel Module Resolver 5.0.0](https://www.npmjs.com/package/babel-plugin-module-resolver)
 
-  <br/><br/>
+--- 
+
 
 # Getting Started
 
@@ -83,22 +85,21 @@ yarn android
 - Shake the mobile to open the React Native Dev menu .
 - Select Reload. Now hot reload should work.
 
-  <br/><br/>
+--- 
+
 
 # Create the release build
 
 https://github.com/night-fury-rider/react-native-template/wiki/Create-the-release-build
 
-<br/><br/>
+--- 
+
 
 # Deploy the App on PlayStore
 
-1. Login into [Developer Console Account](https://play.google.com/console/developers)
-2. Select the app from the App list. It should open the App Dashboard.
-3. Select `Production` (which is under `Release`) from the sidebar.
-4. Click on `Create new release` which is on the right top. It would open `Create production release`.
-5. Upload the build file and follow the instructions.
-   <br/><br/>
+https://github.com/night-fury-rider/react-native-template/wiki/Deploy-the-App-on-PlayStore
+
+--- 
 
 # Disclaimer
 
