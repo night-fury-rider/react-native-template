@@ -8,6 +8,15 @@ export const COLORS = {
 };
 
 export const LIGHT_COLORS = {
+  background1: '#f8f9fd', // Main background color of app
+  background2: '#dce8f4', // Dashboard --> Searchbar background color
+  background3: '#d0e4ff', // Dashboard --> + icon background color
+  background4: '#e6edfd', // Bottom tab background color
+  background5: '#6a8edb', // Bottom tab active tab background color
+  background6: '#0061a2', // Dashboard --> No items --> Icon of Phone
+  background7: '#f8f9fe', // Add/Edit Item --> Background color
+  background8: '#f0f4ff', // Item Details --> Tile Background color
+
   danger1: '#d63d39',
   danger2: 'red',
   danger3: 'red',
@@ -31,12 +40,9 @@ export const BLUE_COLOR_THEME = {
   background2: '#dce8f4', // Dashboard --> Searchbar background color
   background3: '#d0e4ff', // Dashboard --> + icon background color
   background4: '#e6edfd', // Bottom tab background color
-  background5: '#0061a2', // Bottom tab active tab background color
+  background5: '#6a8edb', // Bottom tab active tab background color
   background6: '#0061a2', // Dashboard --> No items --> Icon of Phone
-  // Tools --> Import Item --> Import Button's background (When enabled)
-
   background7: '#f8f9fe', // Add/Edit Item --> Background color
-
   background8: '#f0f4ff', // Item Details --> Tile Background color
 
   text1: '#1e1b16', // Main Text color

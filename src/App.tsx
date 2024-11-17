@@ -3,6 +3,7 @@ import {Appbar, BottomNavigation, useTheme} from 'react-native-paper';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import ErrorBoundary from '$common/components/ErrorBoundary';
+import {LIGHT_COLORS} from '$common/constants/colors.constants';
 import {SETTINGS} from '$common/constants/strings.constants';
 import StorageService from '$common/services/StorageService';
 import DashboardScreen from '$dashboard/DashboardScreen';
@@ -57,12 +58,12 @@ function App() {
           barStyle={{
             backgroundColor: theme.dark
               ? theme.colors.inverseOnSurface
-              : theme.colors.primaryContainer,
+              : LIGHT_COLORS.background4,
           }}
           activeIndicatorStyle={{
             backgroundColor: theme.dark
               ? theme.colors.surface
-              : theme.colors.onPrimary,
+              : LIGHT_COLORS.background5,
           }}
         />
       </SafeAreaProvider>
