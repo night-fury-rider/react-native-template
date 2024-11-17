@@ -63,7 +63,7 @@ function App() {
           activeIndicatorStyle={{
             backgroundColor: theme.dark
               ? theme.colors.surface
-              : LIGHT_COLORS.background5,
+              : LIGHT_COLORS.background3,
           }}
         />
       </SafeAreaProvider>
