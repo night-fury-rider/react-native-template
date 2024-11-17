@@ -8,7 +8,7 @@ export const COLORS = {
 };
 
 export const LIGHT_COLORS = {
-  danger1: '#D63D39',
+  danger1: '#d63d39',
   danger2: 'red',
   danger3: 'red',
 
