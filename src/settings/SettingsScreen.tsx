@@ -1,58 +1,70 @@
-import {StyleSheet, View} from 'react-native';
+import React from 'react';
+import {View, StyleSheet} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
-import {List, Divider, useTheme} from 'react-native-paper';
+import {Card, Text, IconButton, Provider, useTheme} from 'react-native-paper';
 
-import Badge from '$common/components/Badge';
+import {DARK_COLORS, LIGHT_COLORS} from '$common/constants/colors.constants';
 import {SETTINGS} from '$common/constants/strings.constants';
 
-const SettingsScreen = () => {
+const SettingsScreen: React.FC = () => {
   const theme = useTheme();
 
-  const styles = getStyles(theme.colors.background);
+  const styles = getStyles(
+    theme.colors.background,
+    theme.dark ? DARK_COLORS.background9 : LIGHT_COLORS.background9,
+  );
 
   return (
-    <View style={[styles.container]}>
-      <Divider />
-      <List.Item
-        title={SETTINGS.appVersion}
-        left={props => (
-          <List.Icon {...props} icon="information" style={styles.rightIcon} />
-        )}
-        onPress={() => {}}
-        right={() => (
-          <View style={styles.rightContainer}>
-            <Badge
-              value={DeviceInfo.getVersion()}
-              customStyles={styles.badge}></Badge>
+    <Provider>
+      <View style={styles.container}>
+        {/* App Version Row */}
+        <Card style={styles.row}>
+          <View style={styles.rowContent}>
+            <IconButton
+              icon="information"
+              onPress={() => {}}
+              style={styles.iconButton}
+              iconColor={theme.colors.primary}
+            />
+            <Text style={styles.rowText}>{SETTINGS.appVersion}</Text>
+            <Text style={styles.rowText}>{DeviceInfo.getVersion()}</Text>
           </View>
-        )}
-      />
-
-      <Divider />
-    </View>
+        </Card>
+      </View>
+    </Provider>
   );
 };
 
-const getStyles = (containerBackgroundColor: string) =>
+const getStyles = (
+  containerBackgroundColor: string,
+  rowBackgroundColor: string,
+) =>
   StyleSheet.create({
     container: {
       flex: 1,
+      padding: 20,
       backgroundColor: containerBackgroundColor,
     },
-    badge: {
-      borderRadius: 50,
-      height: 40,
-      width: 60,
+    row: {
+      marginVertical: 10,
+      padding: 15,
+      borderRadius: 8,
+      elevation: 2,
+      backgroundColor: rowBackgroundColor,
     },
-    badgeRound: {
-      borderRadius: 50,
-      height: 40,
-      width: 40,
+    rowContent: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
     },
-    rightContainer: {
-      justifyContent: 'center',
+    rowText: {
+      flex: 1,
+      textAlign: 'center',
+      fontSize: 16,
     },
-    rightIcon: {display: 'flex', marginHorizontal: 10},
+    iconButton: {
+      padding: 0,
+    },
   });
 
 export default SettingsScreen;

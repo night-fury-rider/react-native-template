@@ -16,6 +16,7 @@ export const LIGHT_COLORS = {
   background6: '#0061a2', // Dashboard --> No items --> Icon of Phone
   background7: '#f8f9fe', // Add/Edit Item --> Background color
   background8: '#f0f4ff', // Item Details --> Tile Background color
+  background9: '#f5f5f5', // Background of Menu item of Settings Screen.
 
   danger1: '#d63d39',
   danger2: 'red',
@@ -66,6 +67,7 @@ export const ORANGE_COLOR_THEME = {
 };
 
 export const DARK_COLORS = {
+  background9: '#8D8D8D', // Background of Menu item of Settings Screen.
   danger1: '#fd5c63',
   danger2: 'red',
   danger3: 'red',
