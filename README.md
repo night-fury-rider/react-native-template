@@ -22,12 +22,15 @@ This app has following:
 
 # Technologies and Libraries Used
 
-- [React Native 0.75.2](https://reactnative.dev/)
-- [React 18.3.1](https://reactjs.org/)
-- [React Native Paper 5.12.3](https://callstack.github.io/react-native-paper/)
-- [React Native Vector Icons 10.1.0](https://www.npmjs.com/package/react-native-vector-icons)
-- [React Native MMKV 2.10.2](https://github.com/mrousavy/react-native-mmkv)
-- [Babel Module Resolver 5.0.0](https://www.npmjs.com/package/babel-plugin-module-resolver)
+| Library                          | Version |
+| -------------------------------- | ------- |
+| [React Native](https://reactnative.dev/)                                                                 | v0.75   | 
+| [React](https://reactjs.org/)                                                                            | v18     |
+| [React Native Paper](https://callstack.github.io/react-native-paper/)                                    | v5      |
+| [React Native Vector Icons](https://www.npmjs.com/package/react-native-vector-icons)                     | v10     |
+| [React Native MMKV](https://github.com/mrousavy/react-native-mmkv)                                       | v2      |
+| [Babel Module Resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)                      | v5      |
+
 
 --- 
 
