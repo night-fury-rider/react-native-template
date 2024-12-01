@@ -95,7 +95,7 @@ https://github.com/night-fury-rider/react-native-template/wiki/Create-the-releas
 --- 
 
 
-# Deploy the App on PlayStore
+# Deploy the App on Play Store
 
 https://github.com/night-fury-rider/react-native-template/wiki/Deploy-the-App-on-PlayStore
 
