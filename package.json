@@ -5,9 +5,11 @@
   "scripts": {
     "android": "react-native run-android",
     "android-build": "npx react-native build-android --mode=release",
-    "android-build-apk": "cd android && gradlew assembleRelease",
+    "android-build-apk": "cd android && ./gradlew assembleRelease",
+    "android-build-apk-windows": "cd android && gradlew assembleRelease",
     "ios": "react-native run-ios",
     "lint": "eslint .",
+    "postinstall": "patch-package",
     "start": "react-native start --port 8086",
     "test": "jest"
   },
@@ -15,6 +17,7 @@
     "@reduxjs/toolkit": "1.9.7",
     "@types/react-native-vector-icons": "6.4.15",
     "@uv-tech/util": "1.0.11",
+    "patch-package": "8.0.0",
     "react": "18.3.1",
     "react-native": "0.75.2",
     "react-native-device-info": "10.12.0",
