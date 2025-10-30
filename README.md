@@ -57,7 +57,7 @@ yarn android
 ## Enable Wireless hot reload
 
 - Run `adb devices` to get Mobile device name.
-- Run `ipconfig` to get the IP (v4).
+- Run `ipconfig getifaddr en0` to get the IP (v4). On Windows run `ipconfig` for the same.
 - Connect mobile to laptop via USB cable.
 - Install the app
 
