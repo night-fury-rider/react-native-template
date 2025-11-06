@@ -22,8 +22,8 @@ This app has following:
 
 | Library                                                                              | Version |
 | ------------------------------------------------------------------------------------ | ------- |
-| [React Native](https://reactnative.dev/)                                             | v0.75   |
 | [React](https://reactjs.org/)                                                        | v18     |
+| [React Native](https://reactnative.dev/)                                             | v0.75   |
 | [React Native Paper](https://callstack.github.io/react-native-paper/)                | v5      |
 | [React Native Vector Icons](https://www.npmjs.com/package/react-native-vector-icons) | v10     |
 | [React Native MMKV](https://github.com/mrousavy/react-native-mmkv)                   | v2      |
@@ -31,7 +31,9 @@ This app has following:
 
 ---
 
-# Create a Logo
+# Getting Started
+
+## Create a Logo
 
 - Visit [Adobe Express](https://new.express.adobe.com/)
 - Click `Logo` option to open the templates.
@@ -46,7 +48,7 @@ This app has following:
 - Press `Align` option from top header. Select `Middle` and `Center`. It will make sure our logo is at exact center.
 - Press `Download` button to download the logo.
 
-# Create Android Launcher Images
+## Create Android Launcher Images
 
 - Visit [Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html)
 - Select `Image` option from left sidebar.
@@ -81,7 +83,7 @@ yarn android
 # Enable Wireless hot reload
 
 - Run `adb devices` to get Mobile device name.
-- Run `ipconfig` to get the IP (v4).
+- Run `ipconfig getifaddr en0` to get the IP (v4). On Windows run `ipconfig` for the same.
 - Connect mobile to laptop via USB cable.
 - Install the app
 
