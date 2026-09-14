@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "android:aab": "cd android && ./gradlew clean && ./gradlew bundleRelease",
     "android:apk": "cd android && ./gradlew clean && ./gradlew assembleRelease",
     "android:clean": "cd android && ./gradlew clean",
     "clean-watchman": "watchman watch-del-all && watchman shutdown-server",
