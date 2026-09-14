@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "android-build": "cd android && ./gradlew clean && npx react-native build-android --mode=release",
-    "android-build-apk": "cd android && ./gradlew clean && ./gradlew assembleRelease",
-    "android-build-apk-windows": "cd android && gradlew clean && gradlew assembleRelease",
-    "clean-gradle": "cd android && ./gradlew clean",
+    "android:apk": "cd android && ./gradlew clean && ./gradlew assembleRelease",
+    "android:clean": "cd android && ./gradlew clean",
     "clean-watchman": "watchman watch-del-all && watchman shutdown-server",
     "ios": "react-native run-ios",
     "lint": "eslint .",
