@@ -80,6 +80,12 @@ yarn mode:prod
 yarn android
 ```
 
+### Export Source Files to build_src
+
+```
+npm run export-src
+```
+
 # Enable Wireless hot reload
 
 - Run `adb devices` to get Mobile device name.
