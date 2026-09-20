@@ -65,13 +65,13 @@ This app has following:
 # Create the dev build
 
 ```
-yarn testmode
+yarn mode:sandbox
 ```
 
 # Create the prod build
 
 ```
-yarn prodmode
+yarn mode:prod
 ```
 
 # Install the app on mobile

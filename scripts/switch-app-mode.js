@@ -1,8 +1,7 @@
 /**
- * Script: switchAppMode.js
  * Usage:
- *   node scripts/switchAppMode.js test   → Switch to test mode
- *   node scripts/switchAppMode.js prod   → Revert to production mode
+ *   node scripts/switch-app-mode.js sandbox   → Switch to sandbox mode
+ *   node scripts/switch-app-mode.js prod      → Revert to production mode
  */
 
 const fs = require('fs');
@@ -33,7 +32,7 @@ const APP_CONFIG = {
     iosBundleId: applicationId,
     mainComponentName: appName,
   },
-  test: {
+  sandbox: {
     appName: testAppName,
     packageId: testApplicationId,
     iosBundleId: testApplicationId,
@@ -44,9 +43,9 @@ const APP_CONFIG = {
 // =====================
 // 🧭 MODE SELECTION
 // =====================
-const mode = process.argv[2]; // 'test' or 'prod'
-if (!mode || !['test', 'prod'].includes(mode)) {
-  console.error('❌ Usage: node scripts/switchAppMode.js [test|prod]');
+const mode = process.argv[2]; // 'sandbox' or 'prod'
+if (!mode || !['sandbox', 'prod'].includes(mode)) {
+  console.error('❌ Usage: node scripts/switchAppMode.js [sandbox|prod]');
   process.exit(1);
 }
 
@@ -141,7 +140,7 @@ if (fs.existsSync(androidGradle)) {
       'g',
     );
     const regexTest = new RegExp(
-      `applicationId\\s+"${escapeRegExp(APP_CONFIG.test.packageId)}"`,
+      `applicationId\\s+"${escapeRegExp(APP_CONFIG.sandbox.packageId)}"`,
       'g',
     );
     let out = data.replace(regexProd, `applicationId "${target.packageId}"`);
@@ -197,7 +196,7 @@ if (fs.existsSync(iosInfoPlist)) {
     );
     const regexTest = new RegExp(
       `<key>CFBundleIdentifier</key>\\s*<string>${escapeRegExp(
-        APP_CONFIG.test.iosBundleId,
+        APP_CONFIG.sandbox.iosBundleId,
       )}</string>`,
     );
     return data

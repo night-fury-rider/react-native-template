@@ -10,11 +10,11 @@
     "clean-watchman": "watchman watch-del-all && watchman shutdown-server",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "prodmode": "node scripts/switchAppMode.js prod",
+    "mode:prod": "node scripts/switch-app-mode.js prod",
+    "mode:sandbox": "node scripts/switch-app-mode.js sandbox",
     "postinstall": "patch-package",
     "start": "react-native start --port 8086",
-    "test": "jest",
-    "testmode": "node scripts/switchAppMode.js test"
+    "test": "jest"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.9.7",
