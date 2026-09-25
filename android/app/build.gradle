@@ -1,3 +1,5 @@
+import groovy.json.JsonSlurper
+
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
@@ -76,18 +78,22 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
-    def versionMajor = 0
-    def versionMinor = 0
-    def versionPatch = 1
-    def versionBuild = 0 // version bump for public betas
+    
+    def packageJson = new JsonSlurper().parse(
+      file("$rootDir/../package.json")
+    )
+    def packageVersion = packageJson.version;
+    def (versionMajor, versionMinor, versionPatch) = packageVersion
+        .tokenize('.')
+        .collect{it.toInteger()}
 
     namespace "com.yuvrajpatil.apps.base.reactnative"
     defaultConfig {
         applicationId "com.yuvrajpatil.apps.base.reactnative"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode versionMajor * 1000000  + versionMinor * 10000 + versionPatch * 100 + versionBuild
-        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        versionName packageVersion
+        versionCode versionMajor * 1000000  + versionMinor * 10000 + versionPatch * 100
     }
     signingConfigs {
         release {
