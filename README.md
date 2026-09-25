@@ -34,33 +34,48 @@ This app has following:
 # Getting Started
 
 ## Create a Logo
- https://github.com/night-fury-rider/react-native-template/wiki/Create-a-Logo
- 
+
+https://github.com/night-fury-rider/react-native-template/wiki/Create-a-Logo
+
 ## Create Android Launcher Images
- https://github.com/night-fury-rider/react-native-template/wiki/Create-Android-Launcher-Images
 
-# Prerequisite
+https://github.com/night-fury-rider/react-native-template/wiki/Create-Android-Launcher-Images
 
-- Mobile with USB debugging enabled
-- Mobile and laptop are on the same wifi.
-- Logos for android's `res` folder.
+## ⚙️ Prerequisites
 
-# Create the dev build
+| Tool             | Version    |
+| ---------------- | ---------- |
+| Node.js          | >= 22.13.0 |
+| React Native CLI | Latest     |
+| Android Studio   | Latest     |
+| JDK              | 17         |
+
+---
+
+<br />
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Create the dev build
 
 ```
-yarn mode:sandbox
+npm run mode:sandbox
 ```
 
-# Create the prod build
+### Create the prod build
 
 ```
-yarn mode:prod
+npm run mode:prod
 ```
 
-# Install the app on mobile
+### Install the app
 
 ```
-yarn android
+npm run android
 ```
 
 ### Export Source Files to build_src
