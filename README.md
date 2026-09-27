@@ -97,7 +97,7 @@ npm run android
 
 - Disconnect mobile from USB. Metro bundler will be disconnected.
 - Shake the mobile to open the React Native Dev menu. Select Settings. Open Debug server host & port for device.
-- Enter IP v4 (from step 1) and port number (Generally 8081). Ex. `112.18.1.2:8081`
+- Enter IP v4 (from step 1) and port number (Generally 8081). Ex. `1.2.3.4:8081`
 - Shake the mobile to open the React Native Dev menu .
 - Select Reload. Now hot reload should work.
 
