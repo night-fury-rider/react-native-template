@@ -115,6 +115,12 @@ https://github.com/night-fury-rider/react-native-template/wiki/Deploy-the-App-on
 
 ---
 
+# Troubleshooting
+
+https://github.com/night-fury-rider/react-native-template/wiki/Troubleshooting
+
+---
+
 # Disclaimer
 
 This is a foundational app with a basic setup that will serve as the starting point for building my other React Native applications.
