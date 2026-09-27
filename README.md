@@ -116,7 +116,6 @@ https://github.com/night-fury-rider/react-native-template/wiki/Deploy-the-App-on
 ---
 
 # Troubleshooting
-
 https://github.com/night-fury-rider/react-native-template/wiki/Troubleshooting
 
 ---
