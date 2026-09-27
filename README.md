@@ -87,12 +87,12 @@ npm run export-src
 # Enable Wireless hot reload
 
 - Run `adb devices` to get Mobile device name.
-- Run `ipconfig getifaddr en0` to get the IP (v4). On Windows run `ipconfig` for the same.
+- Run `ipconfig getifaddr en0` to get the IP (v4).
 - Connect mobile to laptop via USB cable.
 - Install the app
 
 ```
-yarn android
+npm run android
 ```
 
 - Disconnect mobile from USB. Metro bundler will be disconnected.
