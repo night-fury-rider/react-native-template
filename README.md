@@ -23,14 +23,14 @@ This app has following:
 
 # 🧱 Tech Stack
 
-| Layer             | Technology                               | Version | Why                                                                        |
-| ----------------- | ---------------------------------------- | ------- | -------------------------------------------------------------------------- |
-| Core Technology   | React Native with CLI                    | 0.75    | Full native control — no Expo constraints                                  |
-| Core Library      | React                                    | 18      |
-| Language          | TypeScript                               | 5       |
-| State Management  | Redux Toolkit                            | 1       |
-| Key-Value Storage | MMKV                                     | 2       | 10x faster than AsyncStorage; used for preferences and access state        |
-| Icons             | `react-native-vector-icons`              | 6       |
+| Layer             | Technology                  | Version | Why                                                                 |
+| ----------------- | --------------------------- | ------- | ------------------------------------------------------------------- |
+| Core Technology   | React Native with CLI       | 0.75    | Full native control — no Expo constraints                           |
+| Core Library      | React                       | 18      |
+| Language          | TypeScript                  | 5       |
+| State Management  | Redux Toolkit               | 1       |
+| Key-Value Storage | MMKV                        | 2       | 10x faster than AsyncStorage; used for preferences and access state |
+| Icons             | `react-native-vector-icons` | 6       |
 
 ---
 
@@ -90,11 +90,9 @@ npm run export-src
 - [Troubleshooting](https://github.com/night-fury-rider/react-native-template/wiki/Troubleshooting)
 - [SQLite Database Inspection](https://github.com/night-fury-rider/react-native-template/wiki/SQLite-Database-Inspection)
 
-
 # Disclaimer
 
 This is a foundational app with a basic setup that will serve as the starting point for building my other React Native applications.
-
 
 ## License
 
