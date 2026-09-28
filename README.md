@@ -2,6 +2,8 @@
 
 This is a template for the new React Native apps. Every new React Native app should follow this template.
 
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="60">](https://play.google.com/store/apps/details?id=com.yuvrajpatil.apps.starvault)
+
 This app has following:
 
 <pre>
@@ -19,16 +21,16 @@ This app has following:
 
 ---
 
-# Technologies and Libraries Used
+# 🧱 Tech Stack
 
-| Library                                                                              | Version |
-| ------------------------------------------------------------------------------------ | ------- |
-| [React](https://reactjs.org/)                                                        | v18     |
-| [React Native](https://reactnative.dev/)                                             | v0.75   |
-| [React Native Paper](https://callstack.github.io/react-native-paper/)                | v5      |
-| [React Native Vector Icons](https://www.npmjs.com/package/react-native-vector-icons) | v10     |
-| [React Native MMKV](https://github.com/mrousavy/react-native-mmkv)                   | v2      |
-| [Babel Module Resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)  | v5      |
+| Layer             | Technology                               | Version | Why                                                                        |
+| ----------------- | ---------------------------------------- | ------- | -------------------------------------------------------------------------- |
+| Core Technology   | React Native with CLI                    | 0.75    | Full native control — no Expo constraints                                  |
+| Core Library      | React                                    | 18      |
+| Language          | TypeScript                               | 5       |
+| State Management  | Redux Toolkit                            | 1       |
+| Key-Value Storage | MMKV                                     | 2       | 10x faster than AsyncStorage; used for preferences and access state        |
+| Icons             | `react-native-vector-icons`              | 6       |
 
 ---
 
