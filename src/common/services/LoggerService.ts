@@ -1,5 +1,4 @@
 // This file is inteneded to contain local logging related services. Currently it is not having any telemetry logging.
-import {ToastAndroid} from 'react-native';
 
 const LoggerService = (() => {
   const log = (message: any, ...otherMessages: any[]) => {
@@ -16,13 +15,6 @@ const LoggerService = (() => {
       'color: blue; font-size: 20px',
       otherMessages.length > 0 ? otherMessages : '',
     );
-    ToastAndroid.showWithGravityAndOffset(
-      message,
-      ToastAndroid.SHORT,
-      ToastAndroid.BOTTOM,
-      25,
-      50,
-    );
   };
 
   const warn = (message: any, ...otherMessages: any[]) => {
@@ -38,13 +30,6 @@ const LoggerService = (() => {
       `%c${message}`,
       'color: red; font-size: 20px',
       otherMessages.length > 0 ? otherMessages : '',
-    );
-    ToastAndroid.showWithGravityAndOffset(
-      message,
-      ToastAndroid.SHORT,
-      ToastAndroid.BOTTOM,
-      25,
-      50,
     );
   };
 
